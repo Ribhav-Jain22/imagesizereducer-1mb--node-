@@ -1,0 +1,42 @@
+Steps for Creating and Packaging a Node.js Lambda Function with Sharp
+
+1. Create a new directory for your project:
+   mkdir src
+   cd src
+
+2. Initialize a new Node.js project:
+   npm init -y
+
+3. Install the Sharp library:
+   npm install imagemagick
+
+4. Create the Lambda function file (e.g., image.js):(if not already created)
+   touch image.js
+
+5. Write the Lambda function code:
+   Open image.js and add code:
+
+6. Create a package.json file:
+   Ensure your package.json file includes the following fields:
+
+   {
+     "name": "src",
+     "version": "1.0.0",
+     "description": "AWS Lambda function to resize images using Sharp",
+     "main": "image.js",
+     "dependencies": {
+       "imagemagick": "^0.1.3"
+     }
+   }
+
+7. Zip the project files:
+   In your project directory, use the zip command:
+
+   # Ensure you are in the project directory
+   cd src
+
+   # Zip the contents
+   zip -r ../lambda_function.zip *
+
+8. Upload the deployment package:
+   Upload the lambda_function.zip file to AWS Lambda via the AWS Management Console or AWS CLI.

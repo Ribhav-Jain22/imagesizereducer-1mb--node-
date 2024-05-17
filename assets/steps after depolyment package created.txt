@@ -1,3 +1,4 @@
+open powershell in -/workspaces/imagesizereducer-python- (main)
 aws cli-
 pip3 install awscli --upgrade --user
 
