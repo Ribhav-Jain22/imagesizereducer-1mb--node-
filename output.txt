@@ -1,1 +1,0 @@
-{"errorMessage": "Unable to import module 'ImageReduce': No module named 'PIL'", "errorType": "Runtime.ImportModuleError", "requestId": "72f94fe7-002b-46e6-881a-36453c5a2070", "stackTrace": []}

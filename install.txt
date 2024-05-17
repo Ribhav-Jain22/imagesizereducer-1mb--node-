@@ -1,0 +1,5 @@
+aws cli-
+pip3 install awscli --upgrade --user
+
+localstack-
+python3 -m pip install --upgrade localstack
